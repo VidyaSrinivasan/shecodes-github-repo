@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  color: blueviolet;
+}
+#date,
+#weather-description {
+  color: #7c7c7c;
+}
+#weather-girl {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+}
+
+.unit {
+  position: relative;
+  top: -30px;
+  margin-left: -5px;
+}
+#temperature-text {
+  font-size: 64px;
+}
+.unit {
+  position: relative;
+  padding-left: 0px;
+  top: -34px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.weather {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 0;
+  border-radius: 10px;
+  max-width: 420px;
+}
+.city-title {
+  color: blueviolet;
+}
+
+#current {
+  position: relative;
+  margin-left: -20px;
+}
