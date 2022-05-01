@@ -8,8 +8,19 @@ h1 {
   text-align: center;
   color: blueviolet;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
 #date,
-#weather-description {
+#weather-description,
+.weather-details {
   color: #7c7c7c;
 }
 #weather-girl {
@@ -18,11 +29,6 @@ h1 {
   margin: 20px auto;
 }
 
-.unit {
-  position: relative;
-  top: -30px;
-  margin-left: -5px;
-}
 #temperature-text {
   font-size: 64px;
 }
@@ -38,16 +44,19 @@ h1 {
   padding: 15px;
   margin: 0;
   border-radius: 10px;
-  max-width: 420px;
+  max-width: 620px;
 }
 .city-title {
   color: blueviolet;
 }
 
-#current {
-  position: relative;
-  margin-left: -20px;
-}
 .source-code {
   color: #7c7c7c;
+}
+.active {
+  color: black;
+}
+.active:hover {
+  color: black;
+  cursor: default;
 }

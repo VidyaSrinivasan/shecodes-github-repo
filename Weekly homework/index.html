@@ -28,47 +28,73 @@
     <div class="container">
       <h1>Weather Forecast</h1>
       <img id="weather-girl" src="images/weather.svg" />
-      <form id="city-search">
-        <div class="row">
-          <div class="col-4">
-            <input
-              type="search"
-              placeholder="Enter a city"
-              id="city-input"
-              class="form-control"
-              autofocus="on"
-              autocomplete="off"
-            />
-          </div>
-          <div class="col-1">
-            <input type="submit" id="search" value="Search" class="btn btn-success" />
-          </div>
-          <div class="col-4">
-            <input type="button" id="current" value="Current" class="btn btn-success" />
-          </div>
-        </div>
-      </form>
-      <br />
       <div class="weather">
-        <h2 class="city-title">San Francisco</h2>
-        <div id="date"></div>
-        <div id="weather-description">Mostly cloudy</div>
-        <div class="row">
-            <div class="col-6">
-            <span id="temperature-text">19</span>
-            <span class="unit">
-              <a href="#" id="celsius">°C</a> |
-              <a href="#" id="farenheit">°F</a>
-            </span>
+        <form id="city-search">
+          <div class="row">
+            <div class="col-8">
+              <input
+                type="search"
+                placeholder="Enter a city"
+                id="city-input"
+                class="form-control"
+                autofocus="on"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                id="search"
+                value="Search"
+                class="btn btn-success"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="button"
+                id="current"
+                value="Current"
+                class="btn btn-success"
+              />
             </div>
           </div>
-        </div>
+        </form>
         <br />
-      <small class="source-code"> 
-      <a href="https://github.com/VidyaSrinivasan/shecodes-github-repo" target="_blank" rel="noopener">Open source code</a>
-    by Vidya Srinivasan
+
+        <h2 class="city-title"></h2>
+        <ul>
+          <li id="date"></li>
+          <li id="weather-description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix display-temperature">
+              <img src="#" id="weather-icon" class="float-left" />
+              <span id="temperature-text" class="float-left">19</span>
+              <span class="unit">
+                <a href="#" id="celsius" class="active">°C</a> |
+                <a href="#" id="farenheit">°F</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 weather-details">
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> km/hr</li>
+          </div>
+        </div>
+      </div>
+      <br />
+      <small class="source-code">
+        <a
+          href="https://github.com/VidyaSrinivasan/shecodes-github-repo"
+          target="_blank"
+          rel="noopener"
+          >Open source code</a
+        >
+        by Vidya Srinivasan
       </small>
-  
+    </div>
+
     <script src="app/index.js"></script>
   </body>
 </html>
