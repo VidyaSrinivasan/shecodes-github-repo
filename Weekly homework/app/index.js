@@ -113,6 +113,8 @@ function getCityApi(city) {
 function showCityInformation(response) {
   celsiusTempText = Math.round(response.data.main.temp);
   temperatureTextElement.innerHTML = celsiusTempText;
+  celsiusTemperatureElement.classList.add("active");
+  farenheitTemperatureElement.classList.remove("active");
   let cityElement = document.querySelector(".city-title");
   let cityName = response.data.name;
   cityElement.innerHTML = cityName;
